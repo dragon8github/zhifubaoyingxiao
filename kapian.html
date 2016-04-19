@@ -11,7 +11,8 @@
 		<link rel="stylesheet" href="css/mui/mui.min.css">
 		<style> 
 			/*自定义Css*/
-			body{height:auto;background:#e95452;font-family:"微软雅黑"}
+			
+			body{height:auto;background:#e95452;font-family:"微软雅黑";}
 			.controller{max-width:400px;position:relative;border-radius:5px;margin:30px auto;margin-top:10%;padding:0 0 20px;width:90%;height:auto;background:#fff;text-align:center}
 			.chushi{margin:auto;width:50%}
 			#shangpinmingcheng{margin:20px 0}
@@ -52,13 +53,12 @@
 			.mui-fullscreen{position:fixed;z-index:20;background-color:#000}
 			.mui-ios .mui-navbar .mui-bar .mui-title{position:static}
 
-			
+			 
 		</style>
 		
 	</head>
 
-	<body class="mui-fullscreen">
-		
+	<body class="mui-fullscreen">		
 		<!--页面主结构开始-->
 		<div id="app" class="mui-views">
 			<div class="mui-view">			
@@ -69,54 +69,62 @@
 		<!--页面主结构结束-->
 		  
 		<!--主页面开始-->
-		<div id="default" class="mui-page">
-			<div class="controller">				 
-				<img src="Images/main_dian.png" id="shangpinlogo"/>				
-				<a class="leftbinggan"></a>
-				<a class="rightbinggan"></a>
-				<img src="Images/shangpintu.png" alt="" id="shangpintupian" />
-				<h2 class="mui-content-padded mui-text-center" id="shangpinmingcheng">抹茶布丁<h2>	
-				<a class="mui-btn mui-btn-danger mui-btn-block chushi"  href="#Qrcode">出示</a>				
-				<h5 class="mui-text-center " id="youxiaoriqi">有效期 2015-12-10 至 2015-12-31</h5>
-				<div class="mui-content-padded" id="qitagongneng">
-					<ul class="mui-table-view">
-						<li class="mui-table-view-cell"><a href="#">适用门店<span class="mui-icon mui-icon-arrowright mui-pull-right"><p class="mui-pull-left" id="juli">最近200米</p></span></a></li>
-						<li class="mui-table-view-cell"><a href="index2.html">集点卡<span class="mui-icon mui-icon-arrowright mui-pull-right"></span></a></li>
-						<li class="mui-table-view-cell" id="shiyongxuzhi"><a href="#">使用须知<span class="mui-icon mui-icon-arrowright mui-pull-right"></span></a></li>
-						<li class="mui-table-view-cell"><a href="#">商家电话<span class="mui-icon mui-icon-arrowright mui-pull-right"><p class="mui-pull-left" id="juli">400-1231-238</p></span></a></li>
-					</ul> 
+		<div id="default" class="mui-page">		
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">					
+					<div class="controller">				 
+						<img src="Images/main_dian.png" id="shangpinlogo"/>				
+						<a class="leftbinggan"></a>
+						<a class="rightbinggan"></a>
+						<img src="Images/shangpintu.png" alt="" id="shangpintupian" />
+						<h2 class="mui-content-padded mui-text-center" id="shangpinmingcheng">抹茶布丁<h2>	
+						<a class="mui-btn mui-btn-danger mui-btn-block chushi"  href="#Qrcode">出示</a>				
+						<h5 class="mui-text-center " id="youxiaoriqi">有效期 2015-12-10 至 2015-12-31</h5>
+						<div class="mui-content-padded" id="qitagongneng">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell"><a href="#">适用门店<span class="mui-icon mui-icon-arrowright mui-pull-right"><p class="mui-pull-left" id="juli">最近200米</p></span></a></li>
+								<li class="mui-table-view-cell"><a href="index2.html">集点卡<span class="mui-icon mui-icon-arrowright mui-pull-right"></span></a></li>
+								<li class="mui-table-view-cell" id="shiyongxuzhi"><a href="#">使用须知<span class="mui-icon mui-icon-arrowright mui-pull-right"></span></a></li>
+								<li class="mui-table-view-cell"><a href="#">商家电话<span class="mui-icon mui-icon-arrowright mui-pull-right"><p class="mui-pull-left" id="juli">400-1231-238</p></span></a></li>
+							</ul> 
+						</div>
+					</div>
 				</div>
 			</div>
+			
 		</div>
 		<!--主页面结束-->
 		
 		 
 		
 		
-		<div id="Qrcode" class="mui-page" >
-			<div class="controller">				 
-				<img src="Images/main_dian.png" id="shangpinlogo"/>				
-				<a class="leftbinggan"></a>
-				<a class="rightbinggan"></a>
-				<img src="Images/shangpintu.png" alt="" id="shangpintupian" />
-				<h2 class="mui-content-padded mui-text-center" id="shangpinmingcheng">抹茶布丁<h2>
-				<img id="set_barcode" alt="扫描二维码" />								
-				<h5 class="mui-text-center " id="youxiaoriqi">有效期 2015-12-10 至 2015-12-31</h5>
-				<a class="mui-btn mui-btn-danger mui-btn-block chushi mui-action-back" style="margin-top:15px;">返回</a>
+		<div id="Qrcode" class="mui-page">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">	
+					<div class="controller">				 
+						<img src="Images/main_dian.png" id="shangpinlogo"/>				
+						<a class="leftbinggan"></a>
+						<a class="rightbinggan"></a>
+						<img src="Images/shangpintu.png" alt="" id="shangpintupian" />
+						<h2 class="mui-content-padded mui-text-center" id="shangpinmingcheng">抹茶布丁<h2>
+						<img id="set_barcode" alt="扫描二维码" />								
+						<h5 class="mui-text-center " id="youxiaoriqi">有效期 2015-12-10 至 2015-12-31</h5>
+						<a class="mui-btn mui-btn-danger mui-btn-block chushi mui-action-back" style="margin-top:15px;">返回</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	
 		 
 	
-		<div data-role="popup" id="Cy-Tp-XieYi" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="display:none">
+		<div id="Cy-Tp-XieYi" style="display:none">
 			<div role="main" class="ui-content">
-
 				<div class="col-xs-12 well" id="Div1" style="max-height: 400px;overflow: auto;">
 					<div>
-						<div style="text-align:center"><span style="font-size:24px;line-height: 40px;">《集点卡服务协议》</span></div>
+						<div style="text-align:center"><span style="font-size:24px;line-height: 40px;">《使用须知》</span></div>
 						<span>&nbsp;</span>
 						<br/>
-						<div style="text-align:left">
+						<div style="text-align:left" >
 							集点卡服务协议（以下简称“本协议”）是东莞市糖酒集团美宜佳便利店有限公司下辖特许加盟商户(以下简称“商户”)向东莞市彩洋信息科技有限公司（以下简称“我公司”）申请便民预存款额度服授信服务（以下简称“本服务”）所订立的有效合约。
 							<br/>
 							<br/>在接受本协议之前，请商户仔细阅读本协议的全部内容（特别是粗体字的内容）。商户通过网络页面点击确认或以其他方式选择接受本协议，即表示商户与我公司已达成本协议并同意接受本协议的全部约定内容。
@@ -195,6 +203,11 @@
 			//jQuery代码
 			$(function() 
 			{
+				
+				mui('.mui-scroll-wrapper').scroll({
+					deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+				});
+				
 				$("#set_barcode").JsBarcode("6931273201136", {
 								format: "CODE39",
 								width: 1,
@@ -205,12 +218,11 @@
 				{
 					layer.open
 					({
-							style: "width:80%;color:#fff;background:rgba(0,0, 0, .6);border-radius:20px;",
-							closeBtn: 0,
+							style: "width:80%;color:#fff;background:rgba(0,0, 0, .9);border-radius:5px;",							
 							title: false,
-							shadeClose: true,
-							content: $("#Cy-Tp-XieYi").html(),
-							btn: 0 //默认底部不显示任何按钮					
+							shadeClose: false,
+							shade:0,							
+							content: $("#Cy-Tp-XieYi").html()
 					});
 				})
 				
