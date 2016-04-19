@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的集点卡</title>
+		<link rel="stylesheet" type="text/css" href="css/mui/mui.min.css" />
+
+		<style type="text/css">
+			body{font-family:"微软雅黑";background: #f5f5f9;}
+			.mui-content-padded{background:#fff}
+			.xiaofeishuoming{color:#a5a5a5;font-size:15px}
+			.ico_img{width:30px}
+			.goinfo{float:right;color:#969696;font-size:14px}
+			.num{padding:0 5px;color:#ef6767}
+			.mui-table-view .mui-media-object{height:65px;max-width:75px;border:1px solid #ccc}
+			.mui-table-view:before{display:none}
+			.dian{position:relative;top:7px;max-width:39px}
+			.qiandao{margin:0 0 0 10px;padding:5px 10px;border:1px dashed #ff5f68;border-radius:100%}
+			
+			#binggan{position:relative;margin-bottom:0;padding:20px 0 20px;width:100%;height:100%;background:#fff8ee;text-align:center}
+			#binggan:before{content:open-quote;font-size:0px;width: 100%;background:url(Images/22_01.png) repeat-x ;display: block;position: absolute;top: -5px;}
+			#binggan:after{content:open-quote;font-size:0px;width: 100%;background:url(Images/22_03.png) repeat-x #fff;display: block;position: absolute;bottom: -8px;}
+			#binggan .mui-icon{vertical-align: top;display:inline-block;margin:0px 15px;padding-top:9pt;width:50px;height:50px;border:1px dashed #ff5e67;border-radius:25px;background-color:#fff8ee;background-clip:padding-box}
+			#binggan img{margin:0px 15px;width:50px;text-align:center}			
+			#binggan .bingganblock{display:block;margin:auto;width:100%;margin-bottom: 20px;}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="mui-contet">
+			<p style="border-top: 1px solid #ddd;background: #fff;padding:20px 0px;margin:20px 0px 0px;padding:30px 20px;">
+				<span style="color:#2c3038;font-size:16px;">店铺集点</span> <span class="xiaofeishuoming mui-pull-right">消费满 <span class="num">15</span>元获得<span class="num">1</span>个店铺集点</span>
+				<p id="binggan">
+					<span class="bingganblock">
+				 		<img src="Images/xindian.png" class="ico_img"/>
+					 	<img src="Images/xindian.png" class="ico_img"/>
+					 	<img src="Images/xindian.png" class="ico_img"/>
+					 	<img src="Images/xindian.png" class="ico_img"/>
+					 	<img src="Images/xindian.png" class="ico_img"/>
+				 	</span>
+
+					<span class="bingganblock">
+				 		<img src="Images/xindian.png" class="ico_img"/>
+					 	<img src="Images/xindian.png" class="ico_img"/>
+					 	<span class="mui-icon">11</span>
+						<span class="mui-icon">12</span>
+						<span class="mui-icon">13</span>
+				 	</span>
+				 	
+					<span class="bingganblock">
+				 		<span class="mui-icon">11</span>
+						<span class="mui-icon">12</span>
+						<span class="mui-icon">13</span>
+						<span class="mui-icon">12</span>
+						<span class="mui-icon">12</span>
+					</span>
+
+					<span style="font-size:18px;color:#ff878b;">
+						已集12个
+					</span>
+
+				</p>
+				<ul class="mui-table-view" id="dianpujihua" style="padding-top:15px;border-bottom: 1px solid #ddd;">
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;" onclick="exchange_兑换奖品()">
+							<div class="mui-media-body mui-pull-left">
+								<img class="mui-media-object shangpinlogo" src="Images/nongfushanquan.png">
+							</div>
+							<div class="mui-media-body mui-pull-left" style="margin-left:10px;">
+								<h4 class="mui-content-padded">抹茶布丁</h4>
+								<p class="mui-text-left mui-content-padded">
+									6个集点兑换
+								</p>
+							</div>
+							<div class="mui-media-body mui-pull-right" style="max-width:35%;overflow:visible;white-space: normal;line-height:30px;">
+								<button type="button" style="height:35px;margin-top:10px;border-radius: 15px;width:60px;" class="mui-btn mui-btn-danger mui-btn-outlined">兑换</button>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;" onclick="exchange_兑换奖品()">
+							<div class="mui-media-body mui-pull-left">
+								<img class="mui-media-object shangpinlogo" src="Images/kouxiangtang.png">
+							</div>
+							<div class="mui-media-body mui-pull-left" style="margin-left:10px;">
+								<h4 class="mui-content-padded">抹茶布丁</h4>
+								<p class="mui-text-left mui-content-padded">
+									8个集点兑换
+								</p>
+							</div>
+							<div class="mui-media-body mui-pull-right" style="width:35%;overflow:visible;white-space: normal;line-height:30px;">
+								<p id="title" class="mui-pull-right">
+									<button type="button" style="height:35px;margin-top:10px;border-radius: 15px;width:60px;" class="mui-btn mui-btn-danger mui-btn-outlined">兑换</button>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;" onclick="exchange_兑换奖品()">
+							<div class="mui-media-body mui-pull-left">
+								<img class="mui-media-object shangpinlogo" src="Images/nongfushanquan.png">
+							</div>
+							<div class="mui-media-body mui-pull-left" style="margin-left:10px;">
+								<h4 class="mui-content-padded">抹茶布丁</h4>
+								<p class="mui-text-left mui-content-padded">
+									8个集点兑换
+								</p>
+							</div>
+							<div class="mui-media-body mui-pull-right mui-text-right" style="width:35%;overflow:visible;white-space: normal;line-height:30px;">
+								<button type="button" style="color:#C0C0C0;height:35px;margin-top:10px;border-radius: 15px;width:60px;" class="mui-btn mui-btn-outlined">兑换</button>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</p>
+
+			<p style="border-top: 1px solid #ddd;border-bottom:1px solid #EBCCCC;background: #fff;padding:20px 0px;margin:20px 0px 0px;padding:20px;">
+				<span style="color:#2c3038;font-size:16px;">商品集点</span> <span class="xiaofeishuoming mui-pull-right">消费<span class="num">1</span>次该商品获得<span class="num">1</span>个商品集点</span>
+
+				<ul class="mui-table-view" id="pinpaijihua" style="border-bottom: 1px solid #ddd;">
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;" onclick="exchange_兑换奖品()">
+							<div class="mui-media-body mui-pull-left">
+								<img class="mui-media-object shangpinlogo" src="Images/nongfushanquan.png">
+							</div>
+							<div class="mui-media-body mui-pull-left" style="margin-left:15px;">
+								<p>
+									<img src="Images/huaduo.png" alt="" />
+									<img src="Images/huaduo.png" alt="" />
+									<img src="Images/huaduo.png" alt="" />
+									<img src="Images/baihuaduo.png" alt="" />
+									<img src="Images/baihuaduo.png" alt="" />
+								</p>
+								<p class="mui-text-left" style="text-indent: 10px;">
+									农夫山泉高端泉水
+								</p>
+							</div>
+							<div class="mui-media-body mui-pull-right" style="max-width:35%;overflow:visible;white-space: normal;line-height:30px;">
+								<button type="button" style="height:35px;margin-top:10px;border-radius: 15px;width:60px;" class="mui-btn mui-btn-danger mui-btn-outlined">兑换</button>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;" onclick="exchange_兑换奖品()">
+							<div class="mui-media-body mui-pull-left">
+								<img class="mui-media-object shangpinlogo" src="Images/kouxiangtang.png">
+							</div>
+							<div class="mui-media-body mui-pull-left" style="margin-left:15px;">
+								<p>
+									<img src="Images/huaduo.png" alt="" />
+									<img src="Images/huaduo.png" alt="" />
+									<img src="Images/huaduo.png" alt="" />
+									<img src="Images/huaduo.png" alt="" />
+									<img src="Images/huaduo.png" alt="" />
+								</p>
+								<p class="mui-text-left" style="text-indent: 10px;">
+									绿箭口香糖
+								</p>
+							</div>
+							<div class="mui-media-body mui-pull-right" style="width:35%;overflow:visible;white-space: normal;line-height:30px;">
+								<p id="title" class="mui-pull-right">
+									<button type="button" style="height:35px;margin-top:10px;border-radius: 15px;width:60px;" class="mui-btn mui-btn-danger mui-btn-outlined">兑换</button>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;" onclick="exchange_兑换奖品()">
+							<div class="mui-media-body mui-pull-left">
+								<img class="mui-media-object shangpinlogo" src="Images/nongfushanquan.png">
+							</div>
+							<div class="mui-media-body mui-pull-left" style="margin-left:15px;">
+								<p>
+									<img src="Images/huaduo.png" alt="" />
+									<img src="Images/huaduo.png" alt="" />
+									<img src="Images/huaduo.png" alt="" />
+									<img src="Images/huaduo.png" alt="" />
+									<img src="Images/baihuaduo.png" alt="" />
+
+								</p>
+								<p class="mui-text-left" style="text-indent: 10px;">
+									农夫山泉高端泉水
+								</p>
+							</div>
+							<div class="mui-media-body mui-pull-right mui-text-right" style="width:35%;overflow:visible;white-space: normal;line-height:30px;">
+								<button type="button" style="color:#C0C0C0;height:35px;margin-top:10px;border-radius: 15px;width:60px;" class="mui-btn mui-btn-outlined">兑换</button>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</p>
+
+			<p style="background: #fff;padding:20px 0px;margin:20px 0px;padding:20px;border-bottom: 1px solid #ddd;border-top: 1px solid #ddd;">
+				<span style="color:#2c3038;font-size:16px;">集点规则</span> <span class="mui-icon mui-icon-arrowright mui-pull-right"></span>
+			</p>
+
+		</div>
+
+	</body>
+
+	<script type="text/template" id="shangpin_info" class="mui-hidden">
+
+		<img src="Images/shangpintu.png" alt="" />
+
+		<h4 class="mui-content-padded mui-text-center">大满贯布丁奶茶1杯</h4>
+		<p class="mui-text-center">
+			<img src="Images/dian.png" class="ico_img" alt="" />
+			<img src="Images/dian.png" class="ico_img" alt="" />
+			<img src="Images/dian.png" class="ico_img" alt="" />
+		</p>
+
+		<p>
+			<img id="set_barcode" alt="扫描二维码" style="margin-left: 14%;" />
+		</p>
+
+		<p class="mui-text-center" id="saomiaoerweima">请向收银员出示该二维码</p>
+
+	</script>
+
+	<script src="js/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/JsBarcode/CODE39.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/JsBarcode/JsBarcode.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			$("#qiandao ul li").each(function() {
+				var self = $(this);
+				var index = parseInt(self.index() + 1);
+				var num = self.find("img").size();
+				if (num == 0) {
+					self.find("h4").text(index);
+				}
+			})
+		})
+		exchange_兑换奖品 = function() {
+			//询问框
+			layer.confirm('你确认要兑换该商品吗？', {
+				btn: ['确定', '取消'], //按钮
+				icon: 3,
+				title: '温馨提示'
+			}, function() 
+			{
+				layer.closeAll();
+				var html = $("#shangpin_info").html();
+				var index = layer.open({
+					title: false,
+					skin: "mylayer",
+					closeBtn: 2,
+					type: 1,
+					btn: 0,
+					content: html,
+					shade: [0.4, '#000'],
+					shadeClose: true,
+					success: function() {
+						$("#set_barcode").JsBarcode("6931273201136", {
+							format: "CODE39",
+							width: 1,
+							displayValue: true
+						});
+						$('img').load(function() {
+							//由于模板中存在图片未加载，当layer弹出的时候。宽度计算错误导致不居中，所以我手动居中了
+							var widthForWindow = $(window).width();
+							var winthForLayer = $(".mylayer").width();
+							var myWidth = (widthForWindow - winthForLayer) / 2;
+							layer.style(index, {
+								left: myWidth,
+								top: "15%"
+							});
+						})
+					}
+				})
+			}, function() {
+				return;
+			});
+		}
+	</script>
+
+</html>

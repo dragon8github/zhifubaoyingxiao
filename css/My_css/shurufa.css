@@ -1,0 +1,72 @@
+/* 幽灵输入法 */
+#shurufa_num,#shurufa_q,#shurufa_a,#shurufa_z
+{				
+	list-style: none;
+	margin:15px auto;	
+	clear:both;		
+	padding: 0px;	
+	text-align: center;
+}
+#shurufa_gongneng,#shurufa_num_123,#shurufa_num_456,#shurufa_num_789
+{
+	padding-left:0;
+}
+#shurufa_gongneng li,#shurufa_num li,#shurufa_q li,#shurufa_a li,#shurufa_z li,#shurufa_num_123 li,#shurufa_num_456 li,#shurufa_num_789 li,#shurufa_num_c0 li
+{
+	display: inline-block;
+	width:8%;
+	padding: 5px;
+	border:1px solid #fff;
+	text-align: center;
+	background: transparent;
+	/*background: rgba(255,255,255,.1);*/
+	line-height: 30px;
+	margin-right:5px;	
+	color:#fff; 	
+	border-radius: 7px; 	
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=3);
+	-moz-box-shadow: 2px 2px 10px #909090;
+	-webkit-box-shadow: 2px 2px 10px #909090;
+	box-shadow:2px 2px 10px #909090;
+    
+}
+#shurufa_num_123 li,#shurufa_num_456 li,#shurufa_num_789 li,#shurufa_num_c0 li
+{
+	clear:both;
+	width:19%;
+	min-width: 65px;
+	padding: 15px;
+}
+#shurufa_gongneng li:active,#shurufa_num li:active,#shurufa_q li:active,#shurufa_a li:active,#shurufa_z li:active,#shurufa_num_123 li:active,#shurufa_num_456 li:active,#shurufa_num_789 li:active,#shurufa_num_c0 li:active
+{
+	background: #fff;		
+	color:#000; 
+}
+#shurufa_input,#shurufa_input_num
+{
+	width:30%;
+	background: transparent;
+	border-bottom: 1px solid #fff;
+	border-left:none;
+	border-top:none;
+	border-right:none;
+	border-radius: 0px;
+	text-align: left;
+	color:#fff;
+	margin:15px 10px 0px 10px;
+	float:left;
+	padding-left:5px;
+	font-size: 17px;
+}	
+#shurufa_input_num
+{
+	float:none;
+	width: 30%;
+	text-align:center;
+}
+.shurufa_gongnengtitle
+{
+	float:right;
+	padding-right:15px;	
+	margin-top: 7px;			
+}	

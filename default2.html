@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/mui/mui.min.css"/>
+		<style type="text/css">
+			body{font-family: "微软雅黑";background: #fff;}
+			#logo{max-width:85px;min-width:80px;height:100%;margin-top: 16px;}
+			.dian{max-width:39px;position: relative;top:7px}
+			#title{color:#33333b;font-size:16px;line-height:25px;}
+			.num{color:#ff9395;padding:0px 5px}				
+			.goinfo{font-size:14px;color:#a8a8a8;float:right;}
+			.mui-table-view .mui-media-object.mui-pull-left{margin-right:15px;}
+			.mui-ellipsis{margin-top:5px;}
+			.mui-table-view-cell>a:not(.mui-btn){white-space:normal;}			
+			.qiandao{margin:0px 0px 0px 10px;border:1px dashed #ff5f68;border-radius: 100%;padding: 5px 10px;}
+			.shangpin_name{color:#ff9395} 
+			.mui-table-view::before{border:1px solid #fee0c4;top:0.68px;}
+			.mui-table-view::after{border:1px solid #fee0c4;}
+			#controller{margin-left: 0;background:#fff8ee;width: 100%;margin:auto;}
+			#controller .leftbinggan{width:20px;display:block;content:open-quote;font-size:0px;background:url(Images/binggan2_01.png) repeat-y;position:absolute;left:-8px;top:0px;height:100%;}
+			#controller .rightbinggan{width:20px;display:block;content:open-quote;font-size:0px;background:url(Images/binggan2_03.png) repeat-y;position:absolute;right:-18px;top:0px;height:100%;}
+		</style> 
+	</head>
+	<body>
+		<div style="width: 95%;margin:auto;margin-top:20px;">
+			<ul class="mui-table-view mui-content-padded" id="controller">
+				
+				<a class="leftbinggan"></a>
+				<a class="rightbinggan"></a>
+				
+				<li class="mui-table-view-cell mui-media">
+					<a href="index2.html">
+						<img id="logo" class="mui-media-object mui-pull-left" src="Images/logo.png">
+						<div class="mui-media-body">
+							<p style="margin-top:5px;">
+								<img src="Images/dian.png" alt="LOGO" class="dian" />
+								<span class="qiandao">2</span>
+								<span class="qiandao">3</span>
+								<span class="qiandao">4</span>
+								<span class="qiandao">5</span>
+							</p>
+							<p style="margin-top:15px;" id="title" class="mui-content-padded">太棒啦！已集结<span class="num">9</span>个集点,可兑换<span class="shangpin_name">1杯红豆布丁</span>哦oooo~</p>
+							<p class='mui-ellipsis'><span class="goinfo">查看详情>>></span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui/mui.min.css">
+		<style> 
+			/*自定义Css*/
+			body{height:auto;background:#e95452;font-family:"微软雅黑"}
+			.controller{max-width:400px;position:relative;border-radius:5px;margin:30px auto;margin-top:10%;padding:0 0 20px;width:90%;height:auto;background:#fff;text-align:center}
+			.chushi{margin:auto;width:50%}
+			#shangpinmingcheng{margin:20px 0}
+			#youxiaoriqi{margin:25px 0}
+			#qitagongneng{text-align:left}
+			.mui-icon-arrowright{color:#c7c7cc}
+			#shangpinlogo{width: 70px;position: absolute;top: -30px;left:50%;margin-left:-35px;border-radius: 100%;}
+			.leftbinggan{position:absolute;height:20px;width:20px;background:#e95452;display: block;left:-10px;top:60%;border-radius: 25px;}
+			.rightbinggan{position:absolute;height:20px;width:20px;background:#e95452;display: block;right:-10px;top:60%;border-radius: 25px;}
+			#shangpintupian{width: 100%;max-height: 210px;max-width:400px;}
+			#juli{font-size: 16px;padding-top:7px;padding-right:5px;} 
+		
+		
+		 	 /*DIV切换固定样式*/	
+			.mui-page,.mui-page-content,.mui-pages,.mui-view,.mui-views{position:absolute;left:0;right:0;top:0;bottom:0;width:100%;height:100%;background-color:#e95452}
+			.mui-pages{height:auto}
+			.mui-scroll,.mui-scroll-wrapper{background-color:#e95452}
+			.mui-page.mui-transitioning{-webkit-transition:-webkit-transform 300ms ease;transition:transform 300ms ease}
+			.mui-page-left{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+			.mui-ios .mui-page-left{-webkit-transform:translate3d(-20%,0,0);transform:translate3d(-20%,0,0)}
+			.mui-navbar{position:fixed;right:0;left:0;z-index:10;height:44px;background-color:#f7f7f8}
+			.mui-navbar .mui-bar{position:absolute;background:0 0;text-align:center}
+			.mui-android .mui-navbar-inner.mui-navbar-left{opacity:0}
+			.mui-ios .mui-navbar-left .mui-center,.mui-ios .mui-navbar-left .mui-left,.mui-ios .mui-navbar-left .mui-right{opacity:0}
+			.mui-navbar .mui-btn-nav{-webkit-transition:none;transition:none;-webkit-transition-duration:0s;transition-duration:0s}
+			.mui-navbar .mui-bar .mui-title{display:inline-block;width:auto}
+			.mui-page-shadow{position:absolute;right:100%;top:0;width:16px;height:100%;z-index:-1;content:''}
+			.mui-page-shadow{background:-webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 10%,rgba(0,0,0,.01) 50%,rgba(0,0,0,.2) 100%);background:linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 10%,rgba(0,0,0,.01) 50%,rgba(0,0,0,.2) 100%)}
+			.mui-navbar-inner .mui-transitioning,.mui-navbar-inner.mui-transitioning{-webkit-transition:opacity 300ms ease,-webkit-transform 300ms ease;transition:opacity 300ms ease,transform 300ms ease}
+			.mui-page{display:none}
+			.mui-pages .mui-page{display:block}
+			.mui-page .mui-table-view:first-child{margin-top:15px}
+			.mui-page .mui-table-view:last-child{margin-bottom:30px}
+			.mui-table-view{margin-top:20px}
+			.mui-table-view span.mui-pull-right{color:#999}
+			.mui-table-view-divider{background-color:#efeff4;font-size:14px}
+			.mui-table-view-divider:after,.mui-table-view-divider:before{height:0}
+			.mui-fullscreen{position:fixed;z-index:20;background-color:#000}
+			.mui-ios .mui-navbar .mui-bar .mui-title{position:static}
+
+			
+		</style>
+		
+	</head>
+
+	<body class="mui-fullscreen">
+		
+		<!--页面主结构开始-->
+		<div id="app" class="mui-views">
+			<div class="mui-view">			
+				<div class="mui-pages">
+				</div>
+			</div>
+		</div>
+		<!--页面主结构结束-->
+		  
+		<!--主页面开始-->
+		<div id="default" class="mui-page">
+			<div class="controller">				 
+				<img src="Images/main_dian.png" id="shangpinlogo"/>				
+				<a class="leftbinggan"></a>
+				<a class="rightbinggan"></a>
+				<img src="Images/shangpintu.png" alt="" id="shangpintupian" />
+				<h2 class="mui-content-padded mui-text-center" id="shangpinmingcheng">抹茶布丁<h2>	
+				<a class="mui-btn mui-btn-danger mui-btn-block chushi"  href="#Qrcode">出示</a>				
+				<h5 class="mui-text-center " id="youxiaoriqi">有效期 2015-12-10 至 2015-12-31</h5>
+				<div class="mui-content-padded" id="qitagongneng">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell"><a href="#">适用门店<span class="mui-icon mui-icon-arrowright mui-pull-right"><p class="mui-pull-left" id="juli">最近200米</p></span></a></li>
+						<li class="mui-table-view-cell"><a href="index2.html">集点卡<span class="mui-icon mui-icon-arrowright mui-pull-right"></span></a></li>
+						<li class="mui-table-view-cell" id="shiyongxuzhi"><a href="#">使用须知<span class="mui-icon mui-icon-arrowright mui-pull-right"></span></a></li>
+						<li class="mui-table-view-cell"><a href="#">商家电话<span class="mui-icon mui-icon-arrowright mui-pull-right"><p class="mui-pull-left" id="juli">400-1231-238</p></span></a></li>
+					</ul> 
+				</div>
+			</div>
+		</div>
+		<!--主页面结束-->
+		
+		 
+		
+		
+		<div id="Qrcode" class="mui-page" >
+			<div class="controller">				 
+				<img src="Images/main_dian.png" id="shangpinlogo"/>				
+				<a class="leftbinggan"></a>
+				<a class="rightbinggan"></a>
+				<img src="Images/shangpintu.png" alt="" id="shangpintupian" />
+				<h2 class="mui-content-padded mui-text-center" id="shangpinmingcheng">抹茶布丁<h2>
+				<img id="set_barcode" alt="扫描二维码" />								
+				<h5 class="mui-text-center " id="youxiaoriqi">有效期 2015-12-10 至 2015-12-31</h5>
+				<a class="mui-btn mui-btn-danger mui-btn-block chushi mui-action-back" style="margin-top:15px;">返回</a>
+			</div>
+		</div>
+	
+		 
+	
+		<div data-role="popup" id="Cy-Tp-XieYi" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="display:none">
+			<div role="main" class="ui-content">
+
+				<div class="col-xs-12 well" id="Div1" style="max-height: 400px;overflow: auto;">
+					<div>
+						<div style="text-align:center"><span style="font-size:24px;line-height: 40px;">《集点卡服务协议》</span></div>
+						<span>&nbsp;</span>
+						<br/>
+						<div style="text-align:left">
+							集点卡服务协议（以下简称“本协议”）是东莞市糖酒集团美宜佳便利店有限公司下辖特许加盟商户(以下简称“商户”)向东莞市彩洋信息科技有限公司（以下简称“我公司”）申请便民预存款额度服授信服务（以下简称“本服务”）所订立的有效合约。
+							<br/>
+							<br/>在接受本协议之前，请商户仔细阅读本协议的全部内容（特别是粗体字的内容）。商户通过网络页面点击确认或以其他方式选择接受本协议，即表示商户与我公司已达成本协议并同意接受本协议的全部约定内容。
+							<br/>
+							<br/> 第一条 信用评级
+							<br/> 我公司有权根据商户日常业务开展情况，结合第三方评估意见，对商户的信用等级进行评级。此评级作为我公司判断是否批准商户申请预存款额度的标准之一。
+							<br/>
+							<br/> 第二条 预存款额度授信
+							<br/> 商户通过我公司指定的渠道申请办理集点卡，我公司根据本协议相关约定予以批复。
+							<br/>
+							<br/> 第三条 服务费标准及收取
+							<br/> 在商户使用本服务时，我公司有权向商户收取相关服务费用和免抵押担保费用。服务费用和免抵押担保费用明细详见本协议附件上所列的收费方式说明。相关服务费和免抵押担保费用自商户在我公司的预存款账户额度中直接扣除。
+							<br/>
+							<br/> 第四条 预存款额度发放
+							<br/> 商户申请的便民预存款额度由我公司直接划入商户在我公司预存款账户后，由商户用于开展便民服务业务。
+							<br/>
+							<br/> 第五条 预存款额度适用范围
+							<br/> 商户仅可用以开展便民服务业务，不挪作他用。
+							<br/>
+							<br/> 第六条 商户还款日计算
+							<br/> 按照商户申请账期，自商户成功申请预存款额度时点（以时间点算）起，至成功扣取商户预存款时点，商户需确保在约定还款时点时，预存款账户余额足以抵扣商户申请的额度。本协议项下款项商户可以提前存入商户在我公司的预存款账户，待本协议时间到期，我公司即从商户预存款账户中扣除。
+							<br/>
+							<br/> 第七条 预存款额度逾期归还
+							<br/> 商户同意并确认我公司如商户未在约定时点前归还的本金与服务费，视为违约，需要承担逾期违约金和罚金。逾期违约金计算如下：
+							<br/> 逾期违约金按照每日应还本金的0.25%计算，不低于2元，每日单独计算。
+							<br/> 商户同意并确认如商户逾期15日仍未向我公司偿还申请额度全部本金与服务费，我公司在征得东莞市糖酒集团美宜佳便利店有限公司同意的情况下有权优先扣除该商户在东莞市糖酒集团美宜佳便利店有限公司保留的相应加盟保证金，作为额度授信服务本金、违约金的偿还，并通知东莞市糖酒集团美宜佳便利店有限公司停止向商户供货。
+							<br/>
+							<br/> 第八条 商户的义务和权利
+							<br/> 1、商户承诺绝不为任何非法目的或以任何非法方式使用我公司便民服务平台，也不将便民预存款额度申请服务用于禁止或限制物品的交易，并承诺遵守中华人民共和国相关法律、法规及一切使用互联网及支付服务的惯例。
+							<br/> 2、商户同意并保证不得利用便民预存款额度申请服务从事下列任何侵害他人合法权益或违法的行为，若有违反者，商户应自行承担所有法律责任：
+							<br/> A、违反依法律或本协议所应负的保密义务；
+							<br/> B、 冒用他人名义使用集点卡服务；
+							<br/> C.、涉嫌洗钱、恐怖融资、套现或进行传销活动的；
+							<br/> D、 使用无效银行账户或他人银行账户交易；
+							<br/> E、从事任何可能侵害我公司便民服务系统的行为；
+							<br/> F、其他我司有正当理由认为不适当的行为。
+							<br/> 3、商户可利用我公司各种渠道来查询自己的信用额度、预存款额度授信的进度以及还款情况等。我公司有义务协助商户对账目有异议的部分的进行查询。
+							<br/>
+							<br/> 第九条 我公司的权利和义务
+							<br/> 1、有权检查、监督商户额度资金的使用情况；
+							<br/> 2、按本协议约定在商户额度授信申请通过后及时发放相应额度；
+							<br/> 3、在额度使用期限到期时有权从商户的预存款账户内直接划款。
+							<br/>
+							<br/> 第十条 协议的变更和解除
+							<br/> 我公司有权对本协议内容进行单方面的变更，并以本公司公告的方式予以公布，无需另行单独通知商户；若商户在本协议内容公告变更后继续使用本服务的，表示商户已充分阅读、理解并接受修改后的协议内容，也将遵循修改后的协议内容使用本服务；若商户不同意修改后的协议内容，商户应停止使用本服务并将停止使用本服务前申请的额度一次性支付给我公司。
+							<br/>
+							<br/> 第十一条　本协议争议的解决方式
+							<br/> 商户在履行本合同中发生的争议，由双方协商或者通过调解解决。协商或调解不成，可以向东莞市人民法院起诉，或者向东莞市仲裁机构申请仲裁。在协商和诉讼期间，本协议不涉及争议部分的条款，双方仍需履行。
+							<br/>
+							<br/> 第十二条　协议生效和终止
+							<br/> 本协议经商户确认申请服务或以其他方式选择接受本协议后生效，至协议项下额度与服务费用全部清偿完毕后终止。
+							<br/>
+							<br/> 第十三条　协议附件
+							<br/> 《集点卡服务费标准》
+							<br/>
+						</div>
+					</div>
+				</div>
+
+				<p style="margin:10px 0px 0px 0px;text-align:center;">
+					<a id="Cy_Tp_Agree" onclick="Cy_Tp_Agree()" style="z-index: 9999;margin-right: 10px;color:#fff" class="mui-btn mui-btn-outlined">确 认</a>
+					<a id="Cy_Tp_cannel" onclick="Cy_Tp_cannel()" style="z-index: 9999;color:#fff" class="mui-btn mui-btn-outlined">取 消</a>
+				</p>
+			</div>
+		</div>
+	 
+	
+	 
+	<script src="js/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui/mui.view.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/layermobile/layer.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/JsBarcode/CODE39.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/JsBarcode/JsBarcode.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+			//jQuery代码
+			$(function() 
+			{
+				$("#set_barcode").JsBarcode("6931273201136", {
+								format: "CODE39",
+								width: 1,
+								displayValue: true
+				});
+				
+				$("#shiyongxuzhi").bind("tap",function()
+				{
+					layer.open
+					({
+							style: "width:80%;color:#fff;background:rgba(0,0, 0, .6);border-radius:20px;",
+							closeBtn: 0,
+							title: false,
+							shadeClose: true,
+							content: $("#Cy-Tp-XieYi").html(),
+							btn: 0 //默认底部不显示任何按钮					
+					});
+				})
+				
+			})
+			
+			
+			//∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ 方法体 ∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏
+			 Cy_Tp_Agree = function()
+			{
+				layer.closeAll(); 
+			  }
+			 
+			 Cy_Tp_cannel = function()
+			 {
+				layer.closeAll(); 
+				return false;
+			 }
+			
+			
+			//初始化单页view
+			var viewApi = mui('#app').view({
+				defaultPage: '#default'
+			});
+					 
+			var view = viewApi.view;
+			(function($) {
+				//处理view的后退与webview后退
+				var oldBack = $.back;
+				$.back = function() {
+					if (viewApi.canBack()) { //如果view可以后退，则执行view的后退
+						viewApi.back();
+					} else { //执行webview后退
+						oldBack();
+					}
+				};
+				//监听页面切换事件方案1,通过view元素监听所有页面切换事件，目前提供pageBeforeShow|pageShow|pageBeforeBack|pageBack四种事件(before事件为动画开始前触发)
+				//第一个参数为事件名称，第二个参数为事件回调，其中e.detail.page为当前页面的html对象
+				view.addEventListener('pageBeforeShow', function(e) {
+					//				console.log(e.detail.page.id + ' beforeShow');
+				});
+				view.addEventListener('pageShow', function(e) {
+					//				console.log(e.detail.page.id + ' show');
+				});
+				view.addEventListener('pageBeforeBack', function(e) {
+					//				console.log(e.detail.page.id + ' beforeBack');
+				});
+				view.addEventListener('pageBack', function(e) {
+					//				console.log(e.detail.page.id + ' back');
+				});
+			})(mui);
+			
+	</script>
+  /body>
+</html>

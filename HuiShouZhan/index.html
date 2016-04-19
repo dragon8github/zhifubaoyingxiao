@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的集点卡</title>
+		<link rel="stylesheet" type="text/css" href="css/mui/mui.min.css" />
+
+		<style type="text/css">
+			body{background:#fff;font-family:"微软雅黑"}
+			.num{color:#ef6767;font-size:20px;padding:0 5px}
+			#controller{padding-top:60px;padding-bottom:30px}
+			.ico_img{width:30px}
+			.mui-btn-default{color:silver}
+			#qiandao{margin-bottom:25px}
+			#qiandao h4{color:#ccc;border:2px solid #ccc;width:60%;padding:11px 0;margin:0 auto;border-radius:100%;margin-bottom:-8px}
+			.goinfo{font-size:14px;color:#969696;float:right}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav" id="header">
+			<h4 class="mui-title">我的集点卡</h4>
+		</header>
+
+		<div id="controller">
+			<div class="mui-content-padded" id="qiandao"> 
+				<ul class="mui-table-view mui-grid-view mui-grid-9" style="background: #FCFCFC;max-width: 450px;margin:auto;">
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<img src="Images/dian.png" width="40px"/>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<img src="Images/dian.png" width="40px"/>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<img src="Images/dian.png" width="40px"/>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<img src="Images/dian.png" width="40px"/>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<img src="Images/dian.png" width="40px"/>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<img src="Images/dian.png" width="40px"/>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<img src="Images/dian.png" width="40px"/>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<img src="Images/dian.png" width="40px"/>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<img src="Images/dian.png" width="40px"/>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<img src="Images/dian.png" width="40px"/>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<img src="Images/dian.png" width="40px"/>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<h4>17</h4>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<h4 >18</h4> 
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<h4 >19</h4>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<h4 >20</h4>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<h4 >21</h4>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<h4 >22</h4>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<h4 >23</h4>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<h4 >24</h4>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+						<a href="#">
+							<h4 >25</h4>
+						</a>
+					</li> 
+				</ul>
+			</div>
+
+			<div class="mui-content-padded">
+				<ul class="mui-table-view" id="duihuangongshi">
+					<li class="mui-table-view-cell">
+						<a href="javascript:;" onclick="exchange_兑换奖品()">													
+							<span class="num">3</span> <img src="Images/dian.png" class="ico_img" alt="" /> + 6 = 大满贯布丁奶茶1杯
+							<button class="mui-btn mui-btn-outlined mui-btn-danger">去兑换</button>
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="javascript:;" onclick="exchange_兑换奖品()">													
+							<span class="num">5</span> <img src="Images/dian.png" class="ico_img" alt="" /> = 大满贯布丁奶茶1杯
+							<button class="mui-btn mui-btn-outlined mui-btn-danger">去兑换</button>
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="javascript:;" onclick="exchange_兑换奖品()">													
+							<span class="num">10</span> <img src="Images/dian.png" class="ico_img" alt="" /> = 大满贯布丁奶茶3杯
+							<button class="mui-btn mui-btn-outlined mui-btn-default">去兑换</button>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="mui-content-padded" style="margin-top:20px">
+				<div style="padding: 20px 15px;"> 
+					使用说明<span class="goinfo">更多>></span>
+				</div>				
+				<div class="mui-card" style="padding: 15px;font-size:16px;">
+					<div class="title mui-content-padded">1、这是div模式选项卡中的第1个子页面.</div>
+					<div class="title mui-content-padded">2、何谓div模式的选项卡？
+						其实就是通过DIV模拟一个独立页面，通过DIV的显示、隐藏模拟不同页面的切换，典型的SPA模式；</div>
+					<div class="title mui-content-padded">3、
+						这种模式适合简单业务系统，因为每个选项卡内容要写在一个DIV中，
+						若逻辑复杂，会导致当前页面DOM结构繁杂，造成webview响应缓慢，甚至崩溃；
+						因此若系统较复杂，需要下拉刷新等操作，推荐使用webview模式的选项卡；</div>
+				</div> 
+			</div>
+			
+		</div>		 
+				
+	</body>
+	
+	<script type="text/template" id="shangpin_info" class="mui-hidden">
+		 
+		<img src="Images/shangpintu.png" alt="" /> 		
+		
+		<h4 class="mui-content-padded mui-text-center">大满贯布丁奶茶1杯</h4>
+		<p class="mui-text-center">
+			<img src="Images/dian.png" class="ico_img" alt="" />
+			<img src="Images/dian.png" class="ico_img" alt="" />
+			<img src="Images/dian.png" class="ico_img" alt="" />
+		</p>
+		
+		<p>
+			<img id="set_barcode" alt="扫描二维码" style="margin-left: 14%;" />
+		</p>
+		
+		
+		<p class="mui-text-center" id="saomiaoerweima">请向收银员出示该二维码</p>
+		
+	</script>
+	
+	<script src="js/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/JsBarcode/CODE39.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/JsBarcode/JsBarcode.js" type="text/javascript" charset="utf-8"></script>
+	
+		
+	<script type="text/javascript">
+	
+	
+		$(function()
+		{
+			$("#qiandao ul li").each(function()
+			{
+				var self = $(this);
+				var index = parseInt(self.index() + 1); 
+				var num = self.find("img").size();
+				if(num == 0)
+				{
+					self.find("h4").text(index);					
+				}
+			})
+		})
+	
+	
+		exchange_兑换奖品 = function()
+		{
+			
+			//确认框confirm
+			var btnArray = ['否', '是'];
+		    mui.confirm('确定要兑换商品吗？', 'Hello MUI', btnArray, function(e) 
+		    {
+		        if (e.index == 1) 
+		        {
+		            	var html = $("#shangpin_info").html();	
+			
+			  			var index = layer.open  
+						({
+							title: false,  
+							skin:"mylayer",
+							closeBtn: 2,
+							type:1,
+							btn:0,
+							content:html,
+							shade: [0.4, '#000'],
+							shadeClose:true,
+							success:function()
+							{ 
+								$("#set_barcode").JsBarcode("6931273201136",{format:"CODE39", width:1, displayValue: true});								
+								 $('img').load(function()
+								 {
+								 	//由于模板中存在图片未加载，当layer弹出的时候。宽度计算错误导致不居中，所以我手动居中了
+							 		var widthForWindow = $(window).width();
+									var winthForLayer = $(".mylayer").width();
+									var myWidth = (widthForWindow - winthForLayer) / 2;								
+									layer.style(index,{left:myWidth,top:"15%"});
+								 }) 
+							}
+						}) 
+		        } 
+		        else 
+		        {
+		        	return false;
+		            //mui.toast( '取消兑换');
+		        }
+		    })
+			
+			
+			
+			
+		}
+	
+	</script>
+
+</html>
